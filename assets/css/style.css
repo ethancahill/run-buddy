@@ -147,10 +147,11 @@ margin-bottom: 15px;
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: cneter;
+    margin: 0 auto 35px;
+    width: 50%;
 }
 
 .primary-border {
@@ -161,11 +162,12 @@ margin-bottom: 15px;
     border-color: #39a6b2;
 }
 
+.flex-row {
+    display: flex;
+}
+
 
 /* What we do section start*/
-.intro {
-    text-align: center;
-}
 
 
 .intro p {
@@ -180,7 +182,6 @@ margin-bottom: 15px;
 /* what you do section start*/
 
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
@@ -221,7 +222,7 @@ margin-bottom: 15px;
 /*meet the trainers section start*/
 
 .trainers {
-    text-align: center;
+ 
 }
 
 .trainer {
@@ -265,7 +266,7 @@ margin-bottom: 15px;
 
 .contact {
     background: #024e76;
-    text-align: center;
+
 }
 
 .contact h2 {
