@@ -17,6 +17,14 @@ header {
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -87,6 +95,8 @@ section{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-cta {
@@ -371,8 +381,10 @@ border-radius: 15px;
 /* media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
     header {
+        position: relative;
         padding-bottom: 0;
         justify-content: center;
+       
       }
     
       header h1 {
