@@ -1,19 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --primary-color: var(--primary-color);
-    --secondary-color: var(--secondary-color);
-    --tertiary-color: var(--tertiary-color);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* I'm a CSS comment! */
-=======
     --primary-color: #fce138;
     --secondary-color: #024e76;
     --tertiary-color: #39a6b2;
@@ -26,7 +11,6 @@ body {
   }
   
   body {
->>>>>>> main
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
@@ -39,41 +23,11 @@ body {
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    background-image: url("../images/hero-bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-
-header h1 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-color);
-    margin: 0;
-}
-
-header a {
-    text-decoration: none;
-    color: var(--primary-color)
-}
-
-header nav {
-    margin: 7px 0;
-}
-
-header nav ul {
-=======
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpeg");
+    background-image: url("../img/run_buddy_img.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -87,6 +41,7 @@ header nav ul {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
   
   header a {
     text-decoration: none;
@@ -98,71 +53,18 @@ header nav ul {
   }
   
   header nav ul {
->>>>>>> main
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-<<<<<<< HEAD
-    
-}
-
-header nav ul li a {
-=======
   }
   
   header nav ul li a {
->>>>>>> main
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
-}
-
-section{
-    padding:60px;
-}
-/*Hero Style Start*/
-.hero {
-    background-image: url("../images/hero-bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-attachment: fixed;
-    background-position: 80%;
-}
-
-.hero-cta {
-=======
   }
   
   header nav ul li a:hover {
@@ -220,136 +122,19 @@ section{
   }
   
   .hero-cta {
->>>>>>> main
     width: 35%;
     text-align: right;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
     line-height: 1.2;
-<<<<<<< HEAD
-}
-
-.hero-cta h2 {
-=======
   }
   
   .hero-cta h2 {
->>>>>>> main
     font-style: italic;
     font-size: 55px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-}
-
-.hero-form {
-    background-color: rgba(252, 225, 56, 0.8);
-    padding: 20px;
-    color: var(--secondary-color);
-    border: solid 3px var(--secondary-color);
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-
-}
-
-.checkbox-wrapper input, .radio-wrapper input {
-    opacity: 0;
-  }
-
-.checkbox-wrapper label, .radio-wrapper label {
-    position: relative;
-    left: 10px;
-    margin: 10px;
-    line-height: 1.6;
-  }
-  
-
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: rgba(255, 255, 255, 0.75);  
-    border: 1px solid var(--secondary-color);  
-    position: absolute;
-    top: -4px;
-    left: -30px;
-  }
-
-  .radio-wrapper label::before {
-      border-radius: 50%;
-  }
-
-  .radio-wrapper label::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--secondary-color);
-    position: absolute;
-    left: -29px;
-    top: -3px;
-    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-
-  }
-  
-  .checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    position: absolute;
-    left: -26px;
-    top: 1px;
-    transform: rotate(-58deg);
-  }
-
-  .checkbox-wrapper input + label::after, 
-  .radio-wrapper input + label::after {
-    content: none;
-  }
-  
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
-    content: "";
-  }
-  
-
-.hero-form p{
-    margin: 5px 0 15px;
-}
-
-.form-input{
-border: 1px solid var(--secondary-color);
-display: block;
-padding: 7px 15px;
-font-size: 16px;
-color: var(--secondary-color);
-width: 100%;
-margin-bottom: 15px;
-border-radius: 15px;
-background-color: rgba(255, 255, 255, 0.75)
-}
-
-.form-input:focus {
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-}
-
-.hero-form h3 {
-    font-size: 23px;
-    margin: 0
-}
-
-.hero-form label {
-    margin: 0 5px;
-}
-
-.hero-form button{
-=======
   }
   
   .hero-form {
@@ -397,49 +182,11 @@ background-color: rgba(255, 255, 255, 0.75)
   }
   
   .hero-form button {
->>>>>>> main
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-<<<<<<< HEAD
-    border-radius: 15px;
-}
-
-.hero-form button:hover {
-    background-color: var(--tertiary-color)
-}
-/*Hero Style End*/
-
-.section-title {
-    font-size: 48px;
-    color: var(--secondary-color);
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px;
-    width: 50%;
-}
-
-.primary-border {
-    border-color: var(--primary-color);
-}
-
-.secondary-border {
-    border-color: var(--tertiary-color);
-}
-
-.flex-row {
-    display: flex;
-}
-
-
-/* What we do section start*/
-
-
-.intro p {
-=======
     border-radius: 10px;
   } 
   
@@ -527,20 +274,10 @@ background-color: rgba(255, 255, 255, 0.75)
   
   /* WHAT WE DO STYLES */
   .intro p {
->>>>>>> main
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
     margin: 0 auto;
-<<<<<<< HEAD
-    text-align: center;
-}
-/* what we do section end*/
-
-/* what you do section start*/
-
-.step {
-=======
     font-size: 20px;
     text-align: center;
   }
@@ -553,7 +290,6 @@ background-color: rgba(255, 255, 255, 0.75)
   }
   
   .step {
->>>>>>> main
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -561,66 +297,6 @@ background-color: rgba(255, 255, 255, 0.75)
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    
-}
-
-.step:not(:last-child) {
-    border-bottom: 1px solid var(--tertiary-color);
-}
-
-.steps {
-    background: var(--primary-color);
-}
-
-
-.step h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
-}
-
-.step-info {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 2 70%
-}
-
-.step-text {
-    flex: 12;
-}
-
-.step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-}
-
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color:var(--secondary-color);
-}
-
-.step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-}
-
-.step-img img {
-    max-width: 100%;
-}
-
-
-
-
-/*what you do section end*/
-
-
-/*meet the trainers section start*/
-
-.trainers {
-=======
   }
   
   .step:last-child {
@@ -667,88 +343,18 @@ background-color: rgba(255, 255, 255, 0.75)
   
   /* MEET THE TRAINERS START */
   .trainers {
->>>>>>> main
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-<<<<<<< HEAD
-
-}
-
-.trainer {
-=======
   }
   
   .trainer {
->>>>>>> main
     margin: 20px;
     flex: 1;
     background: var(--secondary-color);
     color: var(--primary-color);
-<<<<<<< HEAD
-}
-
-.trainer img {
-    width: 100%;
-}
-
-.trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-}
-
-.trainer-bio h3 {
-    font-size: 28px;
-}
-
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.trainer-bio p {
-    font-size: 17px;
-}
-
-/*end meet the trainers section*/
-
-/*start reach out section*/
-
-.contact {
-    background: var(--secondary-color);
-
-}
-
-.contact h2 {
-    color: var(--primary-color);
-
-}
-
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
-
-
-.contact-info iframe {
-    height: 400px;
-}
-
-.contact-info div {
-    color: white;
-}
-
-.contact-info h3 {
-=======
   }
   
   .trainer img {
@@ -804,7 +410,6 @@ background-color: rgba(255, 255, 255, 0.75)
   }
   
   .contact-info h3 {
->>>>>>> main
     color: var(--primary-color);
     font-size: 32px;
   }
@@ -814,15 +419,9 @@ background-color: rgba(255, 255, 255, 0.75)
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
-<<<<<<< HEAD
-}
-
-.contact-form input, .contact-form textarea {
-=======
   }
   
   .contact-form input, .contact-form textarea {
->>>>>>> main
     border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
@@ -831,19 +430,6 @@ background-color: rgba(255, 255, 255, 0.75)
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-<<<<<<< HEAD
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.75);
-  
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-}
-
-.contact-form button {
-=======
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
   }
@@ -854,7 +440,6 @@ background-color: rgba(255, 255, 255, 0.75)
   }
   
   .contact-form button {
->>>>>>> main
     width: 100%;
     border: none;
     background: var(--primary-color);
@@ -862,146 +447,6 @@ background-color: rgba(255, 255, 255, 0.75)
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-<<<<<<< HEAD
-    border-radius: 15px;
-    
-}
-
-.contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-}
-
-.contact-info a {
-    color: var(--primary-color)
-}
-
-/*end reach out section*/
-
-
-
-/* media query for smaller desktop screens and smaller */
-@media screen and (max-width: 980px) {
-    header {
-        position: relative;
-        padding-bottom: 0;
-        justify-content: center;
-       
-      }
-    
-      header h1 {
-        width: 100%;
-        text-align: center;
-      }
-    
-      header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-      }
-    
-      header nav ul li a {
-        font-size: 20px;
-      }
-
-      header nav ul li a:hover {
-          background: var(--primary-color);
-          color: var(--secondary-color);
-          border-radius: 15px;
-          text-shadow: none;
-      }
-    
-      footer h2, footer div {
-        text-align: center;
-        width: 100%;
-      }
-
-      .hero-cta, .hero-form {
-        width: 100%;
-      }
-      
-      .hero-cta {
-        text-align: center;
-      }
-
-      .section-title {
-        width: 80%;
-      }
-      
-      .trainer {
-        flex: 0 70%;
-      }
-      
-      .contact-info iframe{
-        flex: 1 100%;
-      }
-
-}
-
-/* media query for tablets and smaller */
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-      }
-    
-      .step h3 {
-        flex: 1 100%;
-        text-align: center;
-      }
-    
-      .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-      }
-    
-      .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-    
-      .step-text {
-        flex: 100%;  
-      }
-    
-   
-}
-
-/* media query for mobile phones and smaller */
-
-@media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-      }
-    
-      .section-title {
-        width: 95%;
-      }
-    
-      .intro p {
-        width: 100%;
-      }
-    
-      .trainer {
-        flex: 0 100%;
-      }
-    
-      .contact-info {
-        text-align: center;
-      }
-    
-      .contact-info > * {
-        flex: 0 100%;
-      }
-
-      .contact-form {
-          order: 3;
-      }
-    
-}
-=======
     border-radius: 10px;
   }
   
@@ -1141,4 +586,3 @@ background-color: rgba(255, 255, 255, 0.75)
     }
   }
   
->>>>>>> main
